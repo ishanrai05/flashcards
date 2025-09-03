@@ -1,0 +1,695 @@
+[
+  {
+    "term": "Ursache",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Ursachen",
+    "simpleGerman": "'Ursache' ist der Grund oder der Auslöser für etwas, das passiert. Es ist der Grund, warum eine bestimmte Wirkung oder ein bestimmtes Ergebnis eintritt.",
+    "simpleEnglish": "'Ursache' is the cause or the reason for something that happens. It's the factor that leads to a specific effect or outcome.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Die Ursache des Unfalls war die glatte Straße.",
+        "english": "The cause of the accident was the slippery road."
+      },
+      {
+        "context": "General",
+        "german": "Der Arzt hat die Ursache für die Kopfschmerzen des Patienten gefunden.",
+        "english": "The doctor found the cause for the patient's headaches."
+      }
+    ]
+  },
+  {
+    "term": "Ausgleichssport",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Ausgleichssportarten",
+    "simpleGerman": "'Ausgleichssport' ist eine sportliche Aktivität, die man macht, um körperliche oder geistige Belastungen auszugleichen und zu entspannen.",
+    "simpleEnglish": "'Ausgleichssport' is a recreational sport activity done to balance and compensate for physical or mental stress and to relax.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Nach einem langen Arbeitstag macht er Joggen als Ausgleichssport.",
+        "english": "After a long workday, he goes jogging as recreational exercise."
+      },
+      {
+        "context": "Sport",
+        "german": "Yoga ist ein beliebter Ausgleichssport für Büroangestellte.",
+        "english": "Yoga is a popular recreational sport for office workers."
+      }
+    ]
+  },
+  {
+    "term": "Austragungsland",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "neutral",
+    "plural": "die Austragungsländer",
+    "simpleGerman": "'Austragungsland' ist das Land, in dem eine große Sportveranstaltung oder ein Turnier stattfindet.",
+    "simpleEnglish": "'Austragungsland' is the host country where a major sporting event or tournament takes place.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Deutschland war das Austragungsland der FIFA-Weltmeisterschaft 2006.",
+        "english": "Germany was the host country of the 2006 FIFA World Cup."
+      },
+      {
+        "context": "Sport",
+        "german": "Das Austragungsland der nächsten Olympischen Spiele ist bereits bekannt.",
+        "english": "The host country of the next Olympic Games is already known."
+      }
+    ]
+  },
+  {
+    "term": "Bewegungsmangel",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "-",
+    "simpleGerman": "'Bewegungsmangel' bedeutet, dass eine Person zu wenig körperliche Aktivität oder Sport macht.",
+    "simpleEnglish": "'Bewegungsmangel' means a lack of physical activity or exercise in a person's life.",
+    "examples": [
+      {
+        "context": "Health",
+        "german": "Bewegungsmangel kann zu Übergewicht und Herzproblemen führen.",
+        "english": "Lack of exercise can lead to obesity and heart problems."
+      },
+      {
+        "context": "Health",
+        "german": "Viele Büroarbeiter leiden unter Bewegungsmangel.",
+        "english": "Many office workers suffer from lack of physical activity."
+      }
+    ]
+  },
+  {
+    "term": "Breitensport",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "-",
+    "simpleGerman": "'Breitensport' ist Sport, den normale Menschen in ihrer Freizeit machen, nicht nur Profisportler.",
+    "simpleEnglish": "'Breitensport' is recreational sports practiced by ordinary people in their free time, not just professional athletes.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Der Verein fördert den Breitensport in der Gemeinde.",
+        "english": "The club promotes recreational sports in the community."
+      },
+      {
+        "context": "Sport",
+        "german": "Breitensport ist wichtig für die Gesundheit der Bevölkerung.",
+        "english": "Recreational sports are important for the health of the population."
+      }
+    ]
+  },
+  {
+    "term": "Verfassung",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Verfassungen",
+    "simpleGerman": "'Verfassung' kann zwei Bedeutungen haben: die körperliche und geistige Kondition einer Person oder die Grundgesetze eines Landes.",
+    "simpleEnglish": "'Verfassung' can have two meanings: a person's physical and mental condition, or a country's constitution (fundamental laws).",
+    "examples": [
+      {
+        "context": "Health",
+        "german": "Er ist heute in einer guten körperlichen Verfassung.",
+        "english": "He is in good physical condition today."
+      },
+      {
+        "context": "Politics",
+        "german": "Die deutsche Verfassung heißt Grundgesetz.",
+        "english": "The German constitution is called the Basic Law."
+      }
+    ]
+  },
+  {
+    "term": "Leichtathletik",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "-",
+    "simpleGerman": "'Leichtathletik' ist eine Sportart mit verschiedenen Disziplinen wie Laufen, Springen und Werfen.",
+    "simpleEnglish": "'Leichtathletik' is athletics or track and field, a sport with various disciplines like running, jumping, and throwing.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Bei den Olympischen Spielen ist Leichtathletik sehr beliebt.",
+        "english": "Athletics is very popular at the Olympic Games."
+      },
+      {
+        "context": "Sport",
+        "german": "Sie trainiert dreimal pro Woche für die Leichtathletik.",
+        "english": "She trains three times a week for track and field."
+      }
+    ]
+  },
+  {
+    "term": "Nervenkitzel",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "-",
+    "simpleGerman": "'Nervenkitzel' ist das aufregende Gefühl, das man bei spannenden oder gefährlichen Aktivitäten hat.",
+    "simpleEnglish": "'Nervenkitzel' is the thrill or excitement one feels during exciting or dangerous activities.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Fallschirmspringen bietet einen besonderen Nervenkitzel.",
+        "english": "Parachuting offers a special thrill."
+      },
+      {
+        "context": "Entertainment",
+        "german": "Der Nervenkitzel beim Horrorfilm war unbeschreiblich.",
+        "english": "The thrill during the horror movie was indescribable."
+      }
+    ]
+  },
+  {
+    "term": "Niederlage",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Niederlagen",
+    "simpleGerman": "'Niederlage' bedeutet, dass man einen Wettkampf oder Kampf verloren hat.",
+    "simpleEnglish": "'Niederlage' means defeat or loss in a competition or contest.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Die Niederlage im Finale war sehr enttäuschend.",
+        "english": "The defeat in the final was very disappointing."
+      },
+      {
+        "context": "Sport",
+        "german": "Nach der Niederlage trainierte die Mannschaft noch härter.",
+        "english": "After the defeat, the team trained even harder."
+      }
+    ]
+  },
+  {
+    "term": "Punktrichter",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Punktrichter",
+    "simpleGerman": "'Punktrichter' ist eine Person, die bei Wettkämpfen die Leistungen der Sportler bewertet und Punkte vergibt.",
+    "simpleEnglish": "'Punktrichter' is a judge who evaluates athletes' performances in competitions and awards points.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Die Punktrichter bewerteten die Gymnastikübung mit 9,5 Punkten.",
+        "english": "The judges scored the gymnastics routine with 9.5 points."
+      },
+      {
+        "context": "Sport",
+        "german": "Beim Eiskunstlauf entscheiden die Punktrichter über den Sieger.",
+        "english": "In figure skating, the judges decide the winner."
+      }
+    ]
+  },
+  {
+    "term": "Risikobereitschaft",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "-",
+    "simpleGerman": "'Risikobereitschaft' ist die Bereitschaft, Risiken einzugehen oder gefährliche Dinge zu tun.",
+    "simpleEnglish": "'Risikobereitschaft' is the willingness to take risks or do dangerous things.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Extremsportler haben eine hohe Risikobereitschaft.",
+        "english": "Extreme sports athletes have a high willingness to take risks."
+      },
+      {
+        "context": "Business",
+        "german": "Unternehmer brauchen eine gewisse Risikobereitschaft.",
+        "english": "Entrepreneurs need a certain willingness to take risks."
+      }
+    ]
+  },
+  {
+    "term": "Schiedsrichter",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Schiedsrichter",
+    "simpleGerman": "'Schiedsrichter' ist eine Person, die bei Sportveranstaltungen die Regeln überwacht und Entscheidungen trifft.",
+    "simpleEnglish": "'Schiedsrichter' is a referee who supervises the rules and makes decisions during sports events.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Der Schiedsrichter pfiff ein Foul und gab einen Elfmeter.",
+        "english": "The referee whistled a foul and awarded a penalty."
+      },
+      {
+        "context": "Sport",
+        "german": "Ohne Schiedsrichter wäre ein faires Spiel unmöglich.",
+        "english": "Without a referee, a fair game would be impossible."
+      }
+    ]
+  },
+  {
+    "term": "Sportveranstaltung",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Sportveranstaltungen",
+    "simpleGerman": "'Sportveranstaltung' ist ein organisiertes Ereignis, bei dem Sport gemacht oder gezeigt wird.",
+    "simpleEnglish": "'Sportveranstaltung' is an organized event where sports are played or demonstrated.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Das Stadtfest hatte viele interessante Sportveranstaltungen.",
+        "english": "The city festival had many interesting sporting events."
+      },
+      {
+        "context": "Sport",
+        "german": "Die größte Sportveranstaltung des Jahres sind die Olympischen Spiele.",
+        "english": "The biggest sporting event of the year is the Olympic Games."
+      }
+    ]
+  },
+  {
+    "term": "Turnier",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "neutral",
+    "plural": "die Turniere",
+    "simpleGerman": "'Turnier' ist ein Wettkampf, bei dem mehrere Spieler oder Teams gegeneinander antreten.",
+    "simpleEnglish": "'Turnier' is a tournament where multiple players or teams compete against each other.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Das Tennisturnier in Wimbledon ist weltberühmt.",
+        "english": "The tennis tournament at Wimbledon is world-famous."
+      },
+      {
+        "context": "Sport",
+        "german": "Sie hat das Schachturnier in ihrer Schule gewonnen.",
+        "english": "She won the chess tournament at her school."
+      }
+    ]
+  },
+  {
+    "term": "Vorsprung",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Vorsprünge",
+    "simpleGerman": "'Vorsprung' bedeutet, dass man vor anderen ist oder einen Vorteil hat.",
+    "simpleEnglish": "'Vorsprung' means being ahead of others or having an advantage.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Der Läufer hat einen Vorsprung von zehn Metern.",
+        "english": "The runner has a lead of ten meters."
+      },
+      {
+        "context": "Business",
+        "german": "Das Unternehmen hat einen technologischen Vorsprung.",
+        "english": "The company has a technological advantage."
+      }
+    ]
+  },
+  {
+    "term": "Aufwand",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "-",
+    "simpleGerman": "'Aufwand' ist die Menge an Zeit, Energie oder Geld, die man für etwas braucht.",
+    "simpleEnglish": "'Aufwand' is the amount of time, energy, or money needed for something; effort or expense.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Der Aufwand für das Projekt war größer als erwartet.",
+        "english": "The effort for the project was greater than expected."
+      },
+      {
+        "context": "Sport",
+        "german": "Der Aufwand für das Training ist sehr hoch.",
+        "english": "The effort required for training is very high."
+      }
+    ]
+  },
+  {
+    "term": "Begleiterscheinungen",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Begleiterscheinungen",
+    "simpleGerman": "'Begleiterscheinungen' sind zusätzliche Effekte oder Symptome, die zusammen mit etwas anderem auftreten.",
+    "simpleEnglish": "'Begleiterscheinungen' are side effects or accompanying symptoms that occur along with something else.",
+    "examples": [
+      {
+        "context": "Health",
+        "german": "Fieber kann Begleiterscheinungen wie Kopfschmerzen haben.",
+        "english": "Fever can have side effects like headaches."
+      },
+      {
+        "context": "General",
+        "german": "Die Begleiterscheinungen des Klimawandels sind überall sichtbar.",
+        "english": "The side effects of climate change are visible everywhere."
+      }
+    ]
+  },
+  {
+    "term": "Mittelpunkt",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Mittelpunkte",
+    "simpleGerman": "'Mittelpunkt' ist die Mitte von etwas oder der wichtigste Teil einer Situation.",
+    "simpleEnglish": "'Mittelpunkt' is the center of something or the focal point of a situation.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Sie steht immer im Mittelpunkt der Aufmerksamkeit.",
+        "english": "She is always the center of attention."
+      },
+      {
+        "context": "Sport",
+        "german": "Der Star-Spieler ist der Mittelpunkt der Mannschaft.",
+        "english": "The star player is the focal point of the team."
+      }
+    ]
+  },
+  {
+    "term": "verfolgen",
+    "theme": "General",
+    "wordType": "verb",
+    "participle": "verfolgt",
+    "preteritum": "verfolgte",
+    "simpleGerman": "'Verfolgen' kann bedeuten, jemandem zu folgen, ein Ziel zu haben, oder beobachtet zu werden.",
+    "simpleEnglish": "'Verfolgen' can mean to follow someone, to pursue a goal, or to be watched/tracked.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Er verfolgt seine Träume mit großer Entschlossenheit.",
+        "english": "He pursues his dreams with great determination."
+      },
+      {
+        "context": "Sport",
+        "german": "Millionen von Menschen haben das Spiel im Fernsehen verfolgt.",
+        "english": "Millions of people followed the game on television."
+      }
+    ]
+  },
+  {
+    "term": "Hinsicht",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Hinsichten",
+    "simpleGerman": "'Hinsicht' bedeutet Bezug oder Aspekt, oft verwendet in 'in dieser Hinsicht' oder 'in Hinsicht auf'.",
+    "simpleEnglish": "'Hinsicht' means regard or aspect, often used in phrases like 'in this regard' or 'with regard to'.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "In finanzieller Hinsicht war das Jahr erfolgreich.",
+        "english": "In financial regard, the year was successful."
+      },
+      {
+        "context": "Sport",
+        "german": "In sportlicher Hinsicht hat er große Fortschritte gemacht.",
+        "english": "With regard to sports, he has made great progress."
+      }
+    ]
+  },
+  {
+    "term": "abheben",
+    "theme": "General",
+    "wordType": "verb",
+    "participle": "abgehoben",
+    "preteritum": "hob ab",
+    "simpleGerman": "'Abheben' kann bedeuten: sich unterscheiden, Geld von der Bank holen, oder (Flugzeug) starten.",
+    "simpleEnglish": "'Abheben' can mean: to stand out/differ, to withdraw money from the bank, or (airplane) to take off.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Er hebt sich durch seine besonderen Fähigkeiten von anderen ab.",
+        "english": "He stands out from others through his special abilities."
+      },
+      {
+        "context": "Banking",
+        "german": "Ich muss noch Geld am Automaten abheben.",
+        "english": "I still need to withdraw money from the ATM."
+      }
+    ]
+  },
+  {
+    "term": "Anziehung",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Anziehungen",
+    "simpleGerman": "'Anziehung' ist die Kraft oder das Gefühl, das Menschen oder Dinge zueinander zieht.",
+    "simpleEnglish": "'Anziehung' is the force or feeling that draws people or things toward each other; attraction.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Die Anziehung zwischen den beiden war sofort spürbar.",
+        "english": "The attraction between the two was immediately noticeable."
+      },
+      {
+        "context": "Tourism",
+        "german": "Der Freizeitpark ist eine große Anziehung für Touristen.",
+        "english": "The amusement park is a major attraction for tourists."
+      }
+    ]
+  },
+  {
+    "term": "Austragungsort",
+    "theme": "Sport",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Austragungsorte",
+    "simpleGerman": "'Austragungsort' ist der spezifische Ort oder die Anlage, wo eine Sportveranstaltung stattfindet.",
+    "simpleEnglish": "'Austragungsort' is the specific venue or facility where a sporting event takes place.",
+    "examples": [
+      {
+        "context": "Sport",
+        "german": "Das Olympiastadion war der Austragungsort für das Finale.",
+        "english": "The Olympic stadium was the venue for the final."
+      },
+      {
+        "context": "Sport",
+        "german": "Der Austragungsort des Tennis-Matches wurde wegen Regen geändert.",
+        "english": "The venue of the tennis match was changed due to rain."
+      }
+    ]
+  },
+  {
+    "term": "Vorfall",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Vorfälle",
+    "simpleGerman": "'Vorfall' ist ein Ereignis oder eine Situation, die passiert ist, oft etwas Ungewöhnliches oder Problematisches.",
+    "simpleEnglish": "'Vorfall' is an incident or event that has occurred, often something unusual or problematic.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Der Vorfall wurde von der Polizei untersucht.",
+        "english": "The incident was investigated by the police."
+      },
+      {
+        "context": "Sport",
+        "german": "Nach dem Vorfall auf dem Spielfeld wurde das Match unterbrochen.",
+        "english": "After the incident on the field, the match was interrupted."
+      }
+    ]
+  },
+  {
+    "term": "entstehen",
+    "theme": "General",
+    "wordType": "verb",
+    "participle": "entstanden",
+    "preteritum": "entstand",
+    "simpleGerman": "'Entstehen' bedeutet, dass etwas neu beginnt oder sich entwickelt.",
+    "simpleEnglish": "'Entstehen' means to arise, emerge, or come into being; something new beginning or developing.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Aus der Diskussion können neue Ideen entstehen.",
+        "english": "New ideas can arise from the discussion."
+      },
+      {
+        "context": "Sport",
+        "german": "Durch regelmäßiges Training kann Muskelkraft entstehen.",
+        "english": "Muscle strength can develop through regular training."
+      }
+    ]
+  },
+  {
+    "term": "Vorbilder",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "neutral",
+    "plural": "die Vorbilder",
+    "simpleGerman": "'Vorbilder' sind Menschen, die als gute Beispiele dienen und die man nachahmen möchte.",
+    "simpleEnglish": "'Vorbilder' are role models - people who serve as good examples and whom one wants to emulate.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Eltern sind wichtige Vorbilder für ihre Kinder.",
+        "english": "Parents are important role models for their children."
+      },
+      {
+        "context": "Sport",
+        "german": "Erfolgreiche Athleten werden oft zu Vorbildern für junge Sportler.",
+        "english": "Successful athletes often become role models for young athletes."
+      }
+    ]
+  },
+  {
+    "term": "Reklameträger",
+    "theme": "Business",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Reklameträger",
+    "simpleGerman": "'Reklameträger' sind Personen oder Objekte, die Werbung zeigen oder transportieren.",
+    "simpleEnglish": "'Reklameträger' are advertising carriers - people or objects that display or carry advertisements.",
+    "examples": [
+      {
+        "context": "Business",
+        "german": "Berühmte Sportler werden oft als Reklameträger für Marken eingesetzt.",
+        "english": "Famous athletes are often used as advertising carriers for brands."
+      },
+      {
+        "context": "Business",
+        "german": "Die Busse in der Stadt dienen als mobile Reklameträger.",
+        "english": "The buses in the city serve as mobile advertising carriers."
+      }
+    ]
+  },
+  {
+    "term": "bevorzugen",
+    "theme": "General",
+    "wordType": "verb",
+    "participle": "bevorzugt",
+    "preteritum": "bevorzugte",
+    "simpleGerman": "'Bevorzugen' bedeutet, dass man etwas lieber mag oder einer Sache den Vorrang gibt.",
+    "simpleEnglish": "'Bevorzugen' means to prefer or favor; giving something priority or liking it more.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Er bevorzugt Tee gegenüber Kaffee.",
+        "english": "He prefers tea over coffee."
+      },
+      {
+        "context": "Sport",
+        "german": "Diese Trainingsmethode wird von Profisportlern bevorzugt.",
+        "english": "This training method is preferred by professional athletes."
+      }
+    ]
+  },
+  {
+    "term": "Ausrichtung",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Ausrichtungen",
+    "simpleGerman": "'Ausrichtung' kann bedeuten: eine Richtung oder Orientierung, oder die Organisation einer Veranstaltung.",
+    "simpleEnglish": "'Ausrichtung' can mean: direction or orientation, or the organization/hosting of an event.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Die politische Ausrichtung der Partei hat sich geändert.",
+        "english": "The political orientation of the party has changed."
+      },
+      {
+        "context": "Sport",
+        "german": "Die Ausrichtung der Weltmeisterschaft kostet viel Geld.",
+        "english": "Hosting the World Championship costs a lot of money."
+      }
+    ]
+  },
+  {
+    "term": "Überbeanspruchung",
+    "theme": "Health",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Überbeanspruchungen",
+    "simpleGerman": "'Überbeanspruchung' bedeutet, dass etwas zu stark oder zu viel belastet wird.",
+    "simpleEnglish": "'Überbeanspruchung' means overuse or overexertion; when something is stressed or used too much.",
+    "examples": [
+      {
+        "context": "Health",
+        "german": "Überbeanspruchung der Muskeln kann zu Verletzungen führen.",
+        "english": "Overuse of muscles can lead to injuries."
+      },
+      {
+        "context": "Work",
+        "german": "Die Überbeanspruchung am Arbeitsplatz führt oft zu Stress.",
+        "english": "Overexertion at work often leads to stress."
+      }
+    ]
+  },
+  {
+    "term": "Zweck",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Zwecke",
+    "simpleGerman": "'Zweck' ist das Ziel oder der Grund, warum man etwas macht.",
+    "simpleEnglish": "'Zweck' is the purpose or reason why something is done; the intended goal.",
+    "examples": [
+      {
+        "context": "General",
+        "german": "Der Zweck dieser Übung ist es, die Fitness zu verbessern.",
+        "english": "The purpose of this exercise is to improve fitness."
+      },
+      {
+        "context": "General",
+        "german": "Jedes Werkzeug hat seinen spezifischen Zweck.",
+        "english": "Every tool has its specific purpose."
+      }
+    ]
+  },
+  {
+    "term": "Haltung",
+    "theme": "General",
+    "wordType": "noun",
+    "gender": "feminine",
+    "plural": "die Haltungen",
+    "simpleGerman": "'Haltung' kann bedeuten: die körperliche Position, eine Meinung oder Einstellung zu etwas.",
+    "simpleEnglish": "'Haltung' can mean: physical posture, or an attitude/stance toward something.",
+    "examples": [
+      {
+        "context": "Health",
+        "german": "Eine gerade Haltung ist wichtig für den Rücken.",
+        "english": "Good posture is important for the back."
+      },
+      {
+        "context": "General",
+        "german": "Seine Haltung zu diesem Thema ist sehr kritisch.",
+        "english": "His attitude toward this topic is very critical."
+      }
+    ]
+  },
+  {
+    "term": "Änderungsvorschläge",
+    "theme": "Business",
+    "wordType": "noun",
+    "gender": "masculine",
+    "plural": "die Änderungsvorschläge",
+    "simpleGerman": "'Änderungsvorschläge' sind Ideen oder Empfehlungen, wie man etwas verbessern oder anders machen könnte.",
+    "simpleEnglish": "'Änderungsvorschläge' are suggestions for changes - ideas or recommendations for how to improve or do something differently.",
+    "examples": [
+      {
+        "context": "Business",
+        "german": "Die Mitarbeiter haben viele Änderungsvorschläge für den neuen Plan eingereicht.",
+        "english": "The employees submitted many suggestions for changes to the new plan."
+      },
+      {
+        "context": "General",
+        "german": "Konstruktive Änderungsvorschläge sind immer willkommen.",
+        "english": "Constructive suggestions for changes are always welcome."
+      }
+    ]
+  }
+]

@@ -1,0 +1,118 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Flashcard Study App</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <h1>📚 Flashcard Study App</h1>
+            <div class="search-filter-container">
+                <input type="text" id="searchInput" placeholder="Search terms..." />
+                <div class="filter-buttons">
+                    <button id="allBtn" class="filter-btn active">All Cards</button>
+                    <button id="needReviewBtn" class="filter-btn">Need Review</button>
+                    <button id="randomBtn" class="filter-btn">Random</button>
+                    <button id="themeDropdown" class="filter-btn dropdown-btn">
+                        By Theme ▼
+                        <div id="themeDropdownContent" class="dropdown-content">
+                            <!-- Theme buttons will be populated by JavaScript -->
+                        </div>
+                    </button>
+                    <button id="wordTypeDropdown" class="filter-btn dropdown-btn">
+                        By Type ▼
+                        <div id="wordTypeDropdownContent" class="dropdown-content">
+                            <!-- Word type buttons will be populated by JavaScript -->
+                        </div>
+                    </button>
+                </div>
+            </div>
+        </header>
+        
+        <div id="studyStats" class="study-stats">
+            <div class="stat-item">
+                <span id="currentCard">0</span> / <span id="totalCards">0</span>
+            </div>
+            <div class="stat-item">
+                <span id="needReviewCount">0</span> cards need review
+            </div>
+        </div>
+        
+        <!-- Single Card Study Mode -->
+        <div id="cardStudyContainer" class="card-study-container">
+            <div id="flashcardSingle" class="flashcard-single">
+                <div class="card-content">
+                    <div class="card-side card-front active">
+                        <div class="flashcard-header">
+                            <h2 class="term" id="cardTerm">Loading...</h2>
+                            <button class="theme-badge" id="cardTheme">Theme</button>
+                        </div>
+                        <div class="grammar-info" id="grammarInfo">
+                            <!-- Grammatical information will be populated by JavaScript -->
+                        </div>
+                        <div class="flip-indicator">
+                            <p>Click card to see explanation</p>
+                        </div>
+                    </div>
+                    
+                    <div class="card-side card-back">
+                        <div class="explanation">
+                            <h3>German Explanation</h3>
+                            <p id="cardGermanExplanation">...</p>
+                            <h3>English Explanation</h3>
+                            <p id="cardEnglishExplanation">...</p>
+                        </div>
+                        <div class="examples">
+                            <h3>Examples</h3>
+                            <div id="cardExamples">
+                                <!-- Examples will be populated by JavaScript -->
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Swipe indicators -->
+                <div class="swipe-indicators">
+                    <div class="swipe-left">❌</div>
+                    <div class="swipe-right">✅</div>
+                </div>
+            </div>
+            
+            <!-- Action buttons -->
+            <div class="action-buttons">
+                <button id="needMorePractice" class="action-btn need-practice">
+                    <span class="btn-icon">❌</span>
+                    <span class="btn-text">Need More Practice</span>
+                </button>
+                <button id="gotIt" class="action-btn got-it">
+                    <span class="btn-icon">✅</span>
+                    <span class="btn-text">Got It!</span>
+                </button>
+            </div>
+            
+            <!-- Navigation -->
+            <div class="navigation">
+                <button id="prevCard" class="nav-btn">‹ Previous</button>
+                <button id="nextCard" class="nav-btn">Next ›</button>
+            </div>
+        </div>
+        
+        <div id="noResults" class="no-results" style="display: none;">
+            <p>No flashcards found. Try adjusting your filters or search criteria.</p>
+        </div>
+        
+        <div id="studyComplete" class="study-complete" style="display: none;">
+            <div class="complete-message">
+                <h2>🎉 Study Session Complete!</h2>
+                <p>Great job! You've reviewed all available cards.</p>
+                <button id="restartStudy" class="action-btn got-it">Start New Session</button>
+            </div>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
