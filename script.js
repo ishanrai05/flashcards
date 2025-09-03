@@ -691,9 +691,14 @@ class FlashcardApp {
         const diffX = this.touchStartX - currentX;
         const diffY = this.touchStartY - currentY;
 
-        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 30) {
+        // If we've moved more than a small threshold, consider it dragging/scrolling
+        if (Math.abs(diffX) > 10 || Math.abs(diffY) > 10) {
             this.isDragging = true;
-            e.preventDefault();
+        }
+
+        // This part is for visual feedback during horizontal swipe
+        if (Math.abs(diffX) > Math.abs(diffY) && Math.abs(diffX) > 30) {
+            e.preventDefault(); // Prevent vertical scroll during horizontal swipe
             
             const cardContent = document.querySelector('.card-content');
             if (diffX > 0) {
