@@ -5,10 +5,34 @@
 }
 
 body {
-    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
-    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    font-family: 'Lora', serif;
     min-height: 100vh;
     color: #333;
+    transition: background 0.5s ease-in-out;
+}
+
+body.bg-default {
+    background: linear-gradient(135deg, #4c5c68 0%, #8d99ae 100%);
+}
+
+body.bg-gender-feminine {
+    background: linear-gradient(135deg, #c895c8 0%, #938dc1 100%);
+}
+
+body.bg-gender-masculine {
+    background: linear-gradient(135deg, #8ab8d0 0%, #6a9ac1 100%);
+}
+
+body.bg-gender-neutral {
+    background: linear-gradient(135deg, #9cbca3 0%, #7e9a84 100%);
+}
+
+body.bg-wordtype-verb {
+    background: linear-gradient(135deg, #c7a982 0%, #b5905a 100%);
+}
+
+body.bg-wordtype-adjective {
+    background: linear-gradient(135deg, #9c94b8 0%, #8fb3b3 100%);
 }
 
 .container {
@@ -26,9 +50,10 @@ header {
 
 header h1 {
     color: white;
-    font-size: 2.5rem;
+    font-size: 2.8rem;
     margin-bottom: 20px;
-    text-shadow: 0 2px 4px rgba(0,0,0,0.3);
+    font-weight: 700;
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .search-filter-container {
@@ -42,20 +67,21 @@ header h1 {
 }
 
 #searchInput {
-    padding: 12px 20px;
+    padding: 14px 22px;
     font-size: 16px;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 25px;
     background: white;
-    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    box-shadow: 0 1px 3px rgba(0,0,0,0.05);
     width: 100%;
     max-width: 400px;
     outline: none;
-    transition: box-shadow 0.3s ease;
+    transition: all 0.3s ease;
 }
 
 #searchInput:focus {
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    border-color: #aaa;
 }
 
 .filter-buttons {
@@ -67,10 +93,10 @@ header h1 {
 
 .filter-btn {
     padding: 10px 20px;
-    border: none;
+    border: 1px solid #ddd;
     border-radius: 20px;
-    background: rgba(255,255,255,0.9);
-    color: #333;
+    background: white;
+    color: #555;
     cursor: pointer;
     font-size: 14px;
     font-weight: 500;
@@ -79,14 +105,15 @@ header h1 {
 }
 
 .filter-btn:hover {
-    background: white;
+    background: #f9f9f9;
     transform: translateY(-2px);
-    box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .filter-btn.active {
-    background: #4CAF50;
+    background: #2c3e50;
     color: white;
+    border-color: #2c3e50;
 }
 
 .dropdown-btn {
@@ -131,7 +158,7 @@ header h1 {
 }
 
 .theme-btn.active {
-    background: #4CAF50;
+    background: #2c3e50;
     color: white;
 }
 
@@ -236,6 +263,7 @@ header h1 {
     padding: 10px 20px;
     border-radius: 20px;
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
 }
 
 .card-study-container {
@@ -272,7 +300,8 @@ header h1 {
     background: white;
     border-radius: 20px;
     padding: 30px;
-    box-shadow: 0 8px 30px rgba(0,0,0,0.15);
+    box-shadow: 0 10px 35px rgba(0,0,0,0.1);
+    border: 1px solid #eee;
     display: flex;
     flex-direction: column;
     overflow-y: auto;
@@ -291,54 +320,15 @@ header h1 {
 }
 
 .flip-indicator p {
-    color: #7f8c8d;
+    color: #999;
     font-size: 18px;
     font-style: italic;
-    background: rgba(103, 126, 234, 0.1);
+    background: #fafafa;
     padding: 20px 30px;
     border-radius: 15px;
-    border: 2px dashed #667eea;
+    border: 2px dashed #eee;
 }
 
-.swipe-indicators {
-    position: absolute;
-    top: 50%;
-    transform: translateY(-50%);
-    width: 100%;
-    display: flex;
-    justify-content: space-between;
-    pointer-events: none;
-    z-index: 10;
-}
-
-.swipe-left, .swipe-right {
-    font-size: 48px;
-    opacity: 0;
-    transform: scale(0.5);
-    transition: all 0.3s ease;
-    background: white;
-    border-radius: 50%;
-    width: 80px;
-    height: 80px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    box-shadow: 0 4px 20px rgba(0,0,0,0.2);
-}
-
-.swipe-left {
-    margin-left: -40px;
-}
-
-.swipe-right {
-    margin-right: -40px;
-}
-
-.card-content.swiping-left .swipe-left,
-.card-content.swiping-right .swipe-right {
-    opacity: 1;
-    transform: scale(1);
-}
 
 .action-buttons {
     display: flex;
@@ -351,17 +341,13 @@ header h1 {
     flex: 1;
     max-width: 200px;
     padding: 15px 25px;
-    border: none;
+    border: 1px solid transparent;
     border-radius: 25px;
     font-size: 16px;
     font-weight: 600;
     cursor: pointer;
     transition: all 0.3s ease;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    gap: 10px;
-    box-shadow: 0 4px 15px rgba(0,0,0,0.1);
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
 }
 
 .action-btn:hover {
@@ -374,25 +360,21 @@ header h1 {
 }
 
 .need-practice {
-    background: linear-gradient(135deg, #ff6b6b, #ee5a24);
+    background: #e74c3c;
     color: white;
 }
 
 .need-practice:hover {
-    background: linear-gradient(135deg, #ff5252, #d63031);
+    background: #c0392b;
 }
 
 .got-it {
-    background: linear-gradient(135deg, #4CAF50, #27ae60);
+    background: #2ecc71;
     color: white;
 }
 
 .got-it:hover {
-    background: linear-gradient(135deg, #43A047, #2ecc71);
-}
-
-.btn-icon {
-    font-size: 20px;
+    background: #27ae60;
 }
 
 .navigation {
@@ -403,7 +385,7 @@ header h1 {
 
 .nav-btn {
     padding: 12px 20px;
-    border: 2px solid rgba(255,255,255,0.3);
+    border: 1px solid rgba(255,255,255,0.8);
     border-radius: 20px;
     background: rgba(255,255,255,0.1);
     color: white;
@@ -411,7 +393,8 @@ header h1 {
     font-weight: 500;
     cursor: pointer;
     transition: all 0.3s ease;
-    backdrop-filter: blur(10px);
+    backdrop-filter: blur(5px);
+    text-shadow: 0 2px 4px rgba(0,0,0,0.2);
 }
 
 .nav-btn:hover {
@@ -424,6 +407,8 @@ header h1 {
     opacity: 0.5;
     cursor: not-allowed;
     transform: none;
+    background: rgba(255,255,255,0.1);
+    border-color: rgba(255,255,255,0.3);
 }
 
 .nav-btn:disabled:hover {
@@ -443,6 +428,7 @@ header h1 {
     padding: 40px;
     border-radius: 25px;
     backdrop-filter: blur(10px);
+    border: 1px solid rgba(255,255,255,0.2);
     max-width: 400px;
     margin: 0 auto;
 }
@@ -615,6 +601,7 @@ header h1 {
     padding: 30px;
     border-radius: 15px;
     display: inline-block;
+    backdrop-filter: blur(10px);
 }
 
 /* Responsive Design */
@@ -712,14 +699,6 @@ header h1 {
     .action-btn {
         padding: 10px 15px;
         font-size: 13px;
-    }
-    
-    .btn-text {
-        display: none;
-    }
-    
-    .btn-icon {
-        font-size: 24px;
     }
     
     .navigation {

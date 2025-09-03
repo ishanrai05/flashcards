@@ -3,13 +3,13 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard Study App</title>
+    <title>Flashcard</title>
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
     <div class="container">
         <header>
-            <h1>📚 Flashcard Study App</h1>
+            <h1>Flashcards</h1>
             <div class="search-filter-container">
                 <input type="text" id="searchInput" placeholder="Search terms..." />
                 <div class="filter-buttons">
@@ -74,23 +74,12 @@
                     </div>
                 </div>
                 
-                <!-- Swipe indicators -->
-                <div class="swipe-indicators">
-                    <div class="swipe-left">❌</div>
-                    <div class="swipe-right">✅</div>
-                </div>
             </div>
             
             <!-- Action buttons -->
             <div class="action-buttons">
-                <button id="needMorePractice" class="action-btn need-practice">
-                    <span class="btn-icon">❌</span>
-                    <span class="btn-text">Need More Practice</span>
-                </button>
-                <button id="gotIt" class="action-btn got-it">
-                    <span class="btn-icon">✅</span>
-                    <span class="btn-text">Got It!</span>
-                </button>
+                <button id="needMorePractice" class="action-btn need-practice">Need More Practice</button>
+                <button id="gotIt" class="action-btn got-it">Got It!</button>
             </div>
             
             <!-- Navigation -->
@@ -106,7 +95,7 @@
         
         <div id="studyComplete" class="study-complete" style="display: none;">
             <div class="complete-message">
-                <h2>🎉 Study Session Complete!</h2>
+                <h2>Study Session Complete!</h2>
                 <p>Great job! You've reviewed all available cards.</p>
                 <button id="restartStudy" class="action-btn got-it">Start New Session</button>
             </div>

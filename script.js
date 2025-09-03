@@ -340,6 +340,7 @@ class FlashcardApp {
             studyContainer.style.display = 'none';
             studyComplete.style.display = 'none';
             noResults.style.display = 'block';
+            this.updatePageBackground(null);
             return;
         }
 
@@ -347,6 +348,7 @@ class FlashcardApp {
             studyContainer.style.display = 'none';
             noResults.style.display = 'none';
             studyComplete.style.display = 'block';
+            this.updatePageBackground(null);
             return;
         }
 
@@ -355,10 +357,36 @@ class FlashcardApp {
         studyContainer.style.display = 'block';
 
         const card = this.currentCards[this.currentCardIndex];
+        this.updatePageBackground(card);
         // Only reset card flip when actually changing to a new card
         this.resetCardFlipForNewCard();
         this.populateCard(card);
         this.updateNavigationButtons();
+    }
+
+    updatePageBackground(card) {
+        const body = document.body;
+        // Remove all existing background classes
+        const classesToRemove = Array.from(body.classList).filter(c => c.startsWith('bg-'));
+        body.classList.remove(...classesToRemove);
+
+        if (!card) {
+            body.classList.add('bg-default');
+            return;
+        }
+
+        let bgClass = '';
+        if (card.wordType === 'noun' && card.gender) {
+            bgClass = `bg-gender-${card.gender}`;
+        } else if (card.wordType === 'verb' || card.wordType === 'adjective') {
+            bgClass = `bg-wordtype-${card.wordType}`;
+        }
+
+        if (bgClass) {
+            body.classList.add(bgClass);
+        } else {
+            body.classList.add('bg-default');
+        }
     }
 
     populateCard(card) {
