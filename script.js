@@ -411,10 +411,14 @@ class FlashcardApp {
 
         const card = this.currentCards[this.currentCardIndex];
         this.updatePageBackground(card);
-        // Only reset card flip when actually changing to a new card
-        this.resetCardFlipForNewCard();
-        this.populateCard(card);
-        this.updateNavigationButtons();
+
+        // Force background update to render before updating card content (iOS fix)
+        window.requestAnimationFrame(() => {
+            // Only reset card flip when actually changing to a new card
+            this.resetCardFlipForNewCard();
+            this.populateCard(card);
+            this.updateNavigationButtons();
+        });
     }
 
     updatePageBackground(card) {
