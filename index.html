@@ -3,27 +3,31 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Flashcard</title>
+    <title>Flashcard Master</title>
     <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
 </head>
-<body>
+<body class="bg-default">
     <div class="container">
         <header>
-            <h1>Flashcards</h1>
+            <h1><i class="fas fa-graduation-cap"></i> Flashcard Master</h1>
             <div class="search-filter-container">
-                <input type="text" id="searchInput" placeholder="Search terms..." />
+                <div class="search-wrapper">
+                    <i class="fas fa-search search-icon"></i>
+                    <input type="text" id="searchInput" placeholder="Search terms, themes, or examples..." />
+                </div>
                 <div class="filter-buttons">
-                    <button id="allBtn" class="filter-btn active">All Cards</button>
-                    <button id="needReviewBtn" class="filter-btn">Need Review</button>
-                    <button id="randomBtn" class="filter-btn">Random</button>
+                    <button id="allBtn" class="filter-btn active"><i class="fas fa-th-large"></i> All Cards</button>
+                    <button id="needReviewBtn" class="filter-btn"><i class="fas fa-redo"></i> Need Review</button>
+                    <button id="randomBtn" class="filter-btn"><i class="fas fa-random"></i> Random</button>
                     <button id="themeDropdown" class="filter-btn dropdown-btn">
-                        By Theme ▼
+                        <i class="fas fa-tag"></i> By Theme ▼
                         <div id="themeDropdownContent" class="dropdown-content">
                             <!-- Theme buttons will be populated by JavaScript -->
                         </div>
                     </button>
                     <button id="wordTypeDropdown" class="filter-btn dropdown-btn">
-                        By Type ▼
+                        <i class="fas fa-font"></i> By Type ▼
                         <div id="wordTypeDropdownContent" class="dropdown-content">
                             <!-- Word type buttons will be populated by JavaScript -->
                         </div>

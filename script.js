@@ -12,8 +12,39 @@ class FlashcardApp {
         this.touchStartY = 0;
         this.isDragging = false;
         this.recentTouch = false;
+        this.confettiActive = false;
+        this.cardFlipSound = null;
+        this.successSound = null;
         
         this.init();
+    }
+
+    initSounds() {
+        // Create audio context for sound effects
+        try {
+            // Create silent audio elements to enable sound on user interaction
+            this.cardFlipSound = new Audio();
+            this.successSound = new Audio();
+        } catch (e) {
+            console.log('Audio not supported');
+        }
+    }
+
+    loadConfetti() {
+        // Create confetti container
+        const confettiContainer = document.createElement('div');
+        confettiContainer.id = 'confetti-container';
+        confettiContainer.style.cssText = `
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+            z-index: 10000;
+            display: none;
+        `;
+        document.body.appendChild(confettiContainer);
     }
 
     async init() {
@@ -426,9 +457,13 @@ class FlashcardApp {
         
         // Apply gender-based border color to the card
         const cardContent = document.querySelector('.card-content');
-        cardContent.classList.remove('gender-masculine', 'gender-feminine', 'gender-neutral');
+        cardContent.classList.remove('gender-masculine', 'gender-feminine', 'gender-neutral', 'word-type-verb', 'word-type-adjective');
         if (card.wordType === 'noun' && card.gender) {
             cardContent.classList.add(`gender-${card.gender}`);
+        } else if (card.wordType === 'verb') {
+            cardContent.classList.add('word-type-verb');
+        } else if (card.wordType === 'adjective') {
+            cardContent.classList.add('word-type-adjective');
         }
 
         // Apply gradient background to card sides
@@ -701,6 +736,8 @@ class FlashcardApp {
             // Show completion screen
             document.getElementById('cardStudyContainer').style.display = 'none';
             document.getElementById('studyComplete').style.display = 'block';
+            // Trigger confetti for completion
+            this.triggerConfetti();
         }
     }
 
@@ -714,6 +751,59 @@ class FlashcardApp {
     restartStudy() {
         this.currentCardIndex = 0;
         this.applyFilters();
+        // Trigger confetti for new session
+        this.triggerConfetti();
+    }
+
+    // Confetti effect for study completion
+    triggerConfetti() {
+        const confettiContainer = document.getElementById('confetti-container');
+        if (!confettiContainer) return;
+        
+        confettiContainer.style.display = 'block';
+        
+        // Create confetti pieces
+        for (let i = 0; i < 150; i++) {
+            const confetti = document.createElement('div');
+            confetti.className = 'confetti-piece';
+            confetti.style.cssText = `
+                position: absolute;
+                width: 10px;
+                height: 10px;
+                background-color: hsl(${Math.random() * 360}, 100%, 50%);
+                top: -10px;
+                left: ${Math.random() * 100}%;
+                opacity: ${Math.random() * 0.5 + 0.5};
+                transform: rotate(${Math.random() * 360}deg);
+                animation: fall ${Math.random() * 3 + 2}s linear forwards;
+            `;
+            confettiContainer.appendChild(confetti);
+        }
+        
+        // Add CSS for animation
+        if (!document.getElementById('confetti-css')) {
+            const style = document.createElement('style');
+            style.id = 'confetti-css';
+            style.textContent = `
+                @keyframes fall {
+                    0% {
+                        transform: translateY(0) rotate(0deg) scale(1);
+                        opacity: 1;
+                    }
+                    100% {
+                        transform: translateY(100vh) rotate(${Math.random() * 360}deg) scale(0);
+                        opacity: 0;
+                    }
+                }
+            `;
+            document.head.appendChild(style);
+        }
+        
+        // Remove confetti after animation
+        setTimeout(() => {
+            confettiContainer.innerHTML = '';
+            confettiContainer.style.display = 'none';
+        }, 5000);
     }
 
     // Touch and mouse event handlers for swipe
