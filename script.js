@@ -430,6 +430,18 @@ class FlashcardApp {
         if (card.wordType === 'noun' && card.gender) {
             cardContent.classList.add(`gender-${card.gender}`);
         }
+
+        // Apply gradient background to card sides
+        const cardSides = document.querySelectorAll('.card-side');
+        cardSides.forEach(side => {
+            side.classList.remove('word-type-noun', 'word-type-verb', 'word-type-adjective', 'gender-masculine', 'gender-feminine', 'gender-neutral');
+            if (card.wordType) {
+                side.classList.add(`word-type-${card.wordType}`);
+            }
+            if (card.gender) {
+                side.classList.add(`gender-${card.gender}`);
+            }
+        });
         
         const examplesContainer = document.getElementById('cardExamples');
         examplesContainer.innerHTML = card.examples.map(example => `

@@ -4,8 +4,10 @@
     box-sizing: border-box;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500;700&display=swap');
+
 body {
-    font-family: 'Lora', serif;
+    font-family: 'Roboto', sans-serif;
     min-height: 100vh;
     color: #333;
     transition: background 0.5s ease-in-out;
@@ -305,6 +307,27 @@ header h1 {
     display: flex;
     flex-direction: column;
     overflow-y: auto;
+    transition: background 0.5s ease-in-out;
+}
+
+.card-side.word-type-noun.gender-feminine {
+    background: linear-gradient(135deg, #fce3f5 0%, #e6d4e6 100%);
+}
+
+.card-side.word-type-noun.gender-masculine {
+    background: linear-gradient(135deg, #e2f0f7 0%, #d4e3f0 100%);
+}
+
+.card-side.word-type-noun.gender-neutral {
+    background: linear-gradient(135deg, #e5f2e8 0%, #d9e6d9 100%);
+}
+
+.card-side.word-type-verb {
+    background: linear-gradient(135deg, #f7f0e6 0%, #f0e5d4 100%);
+}
+
+.card-side.word-type-adjective {
+    background: linear-gradient(135deg, #e6e4f2 0%, #e2e8e8 100%);
 }
 
 .card-back {
