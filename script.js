@@ -173,13 +173,27 @@ class FlashcardApp {
         });
 
         // Navigation buttons
-        document.getElementById('prevCard').addEventListener('click', () => {
+        const prevCardBtn = document.getElementById('prevCard');
+        const nextCardBtn = document.getElementById('nextCard');
+        
+        prevCardBtn.addEventListener('click', () => {
             this.previousCard();
         });
-
-        document.getElementById('nextCard').addEventListener('click', () => {
+        
+        nextCardBtn.addEventListener('click', () => {
             this.nextCard();
         });
+        
+        // Add touch support for mobile devices
+        prevCardBtn.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            this.previousCard();
+        }, { passive: false });
+        
+        nextCardBtn.addEventListener('touchstart', (e) => {
+            e.preventDefault();
+            this.nextCard();
+        }, { passive: false });
 
         // Restart study button
         document.getElementById('restartStudy').addEventListener('click', () => {
@@ -266,6 +280,10 @@ class FlashcardApp {
         this.updateActiveButtons();
         this.saveSessionState();
         this.applyFilters();
+        // Update background immediately when filter changes
+        if (this.currentCards.length > 0) {
+            this.updatePageBackground(this.currentCards[this.currentCardIndex]);
+        }
     }
 
     setWordTypeFilter(wordType) {
@@ -274,6 +292,10 @@ class FlashcardApp {
         this.updateActiveButtons();
         this.saveSessionState();
         this.applyFilters();
+        // Update background immediately when filter changes
+        if (this.currentCards.length > 0) {
+            this.updatePageBackground(this.currentCards[this.currentCardIndex]);
+        }
     }
 
     updateActiveButtons() {
@@ -399,7 +421,9 @@ class FlashcardApp {
         const body = document.body;
         // Remove all existing background classes
         const classesToRemove = Array.from(body.classList).filter(c => c.startsWith('bg-'));
-        body.classList.remove(...classesToRemove);
+        if (classesToRemove.length > 0) {
+            body.classList.remove(...classesToRemove);
+        }
 
         if (!card) {
             body.classList.add('bg-default');
@@ -573,12 +597,12 @@ class FlashcardApp {
         const cardContent = document.querySelector('.card-content');
         if (!cardContent) return;
         
-        // Completely replace the card element to ensure no duplicate event listeners
-        const newCardContent = cardContent.cloneNode(true);
-        cardContent.parentNode.replaceChild(newCardContent, cardContent);
-        
         // Simple approach: Just use one event type based on device capability
         let hasInteracted = false;
+        
+        // Remove existing event listeners by cloning and replacing
+        const newCardContent = cardContent.cloneNode(true);
+        cardContent.parentNode.replaceChild(newCardContent, cardContent);
         
         // For touch devices
         if ('ontouchstart' in window) {
@@ -706,6 +730,13 @@ class FlashcardApp {
 
         this.saveProgress();
         this.updateStats();
+
+        // Update background for next card immediately (for mobile responsiveness)
+        if (this.currentCardIndex < this.currentCards.length - 1) {
+            this.updatePageBackground(this.currentCards[this.currentCardIndex + 1]);
+        } else {
+            this.updatePageBackground(null);
+        }
 
         // Auto advance to next card after a delay
         setTimeout(() => {
